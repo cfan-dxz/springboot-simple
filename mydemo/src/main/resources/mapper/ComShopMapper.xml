@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mydemo.mapper.ComShopMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.mydemo.entity.ComShop">
+        <id column="shop_id" property="shopId" />
+        <result column="shop_name" property="shopName" />
+        <result column="company_id" property="companyId" />
+        <result column="platform_id" property="platformId" />
+        <result column="platform_name" property="platformName" />
+        <result column="store_name" property="storeName" />
+        <result column="store_email" property="storeEmail" />
+        <result column="store_site" property="storeSite" />
+        <result column="store_url" property="storeUrl" />
+        <result column="merchant_id" property="merchantId" />
+        <result column="access_token" property="accessToken" />
+        <result column="access_token_expire_time" property="accessTokenExpireTime" />
+        <result column="refresh_token" property="refreshToken" />
+        <result column="refresh_token_expire_time" property="refreshTokenExpireTime" />
+        <result column="app_key" property="appKey" />
+        <result column="app_secret" property="appSecret" />
+        <result column="api_email" property="apiEmail" />
+        <result column="api_login" property="apiLogin" />
+        <result column="api_pwd" property="apiPwd" />
+        <result column="redirect_uri" property="redirectUri" />
+        <result column="is_enabled" property="isEnabled" />
+        <result column="is_auth" property="isAuth" />
+        <result column="shop_type" property="shopType" />
+        <result column="order_download_time" property="orderDownloadTime" />
+        <result column="listing_download_time" property="listingDownloadTime" />
+        <result column="campaign_download_time" property="campaignDownloadTime" />
+        <result column="refund_download_time" property="refundDownloadTime" />
+        <result column="prefix" property="prefix" />
+        <result column="manager_user_id" property="managerUserId" />
+        <result column="manager_user_name" property="managerUserName" />
+        <result column="ebay_access_token" property="ebayAccessToken" />
+        <result column="ebay_access_token_expire_time" property="ebayAccessTokenExpireTime" />
+        <result column="warehouse_id" property="warehouseId" />
+        <result column="create_date" property="createDate" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="create_user_name" property="createUserName" />
+        <result column="modify_date" property="modifyDate" />
+        <result column="modify_user_id" property="modifyUserId" />
+        <result column="modify_user_name" property="modifyUserName" />
+        <result column="delete_date" property="deleteDate" />
+        <result column="delete_user_id" property="deleteUserId" />
+        <result column="delete_user_name" property="deleteUserName" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        shop_id, shop_name, company_id, platform_id, platform_name, store_name, store_email, store_site, store_url, merchant_id, access_token, access_token_expire_time, refresh_token, refresh_token_expire_time, app_key, app_secret, api_email, api_login, api_pwd, redirect_uri, is_enabled, is_auth, shop_type, order_download_time, listing_download_time, campaign_download_time, refund_download_time, prefix, manager_user_id, manager_user_name, ebay_access_token, ebay_access_token_expire_time, warehouse_id, create_date, create_user_id, create_user_name, modify_date, modify_user_id, modify_user_name, delete_date, delete_user_id, delete_user_name, is_deleted
+    </sql>
+
+</mapper>

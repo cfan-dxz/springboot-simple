@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mydemo.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.mydemo.entity.SysUser">
+        <id column="user_id" property="userId" />
+        <result column="user_name" property="userName" />
+        <result column="user_enname" property="userEnname" />
+        <result column="email" property="email" />
+        <result column="password" property="password" />
+        <result column="sex" property="sex" />
+        <result column="status" property="status" />
+        <result column="mobile" property="mobile" />
+        <result column="qq" property="qq" />
+        <result column="avatar" property="avatar" />
+        <result column="company_id" property="companyId" />
+        <result column="superior_id" property="superiorId" />
+        <result column="superior_name" property="superiorName" />
+        <result column="qr_code" property="qrCode" />
+        <result column="position" property="position" />
+        <result column="last_login_ip" property="lastLoginIp" />
+        <result column="last_login_date" property="lastLoginDate" />
+        <result column="reg_date" property="regDate" />
+        <result column="type" property="type" />
+        <result column="ip_open" property="ipOpen" />
+        <result column="last_change_password_date" property="lastChangePasswordDate" />
+        <result column="remark" property="remark" />
+        <result column="create_date" property="createDate" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="create_user_name" property="createUserName" />
+        <result column="modify_date" property="modifyDate" />
+        <result column="modify_user_id" property="modifyUserId" />
+        <result column="modify_user_name" property="modifyUserName" />
+        <result column="delete_date" property="deleteDate" />
+        <result column="delete_user_id" property="deleteUserId" />
+        <result column="delete_user_name" property="deleteUserName" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, user_name, user_enname, email, password, sex, status, mobile, qq, avatar, company_id, superior_id, superior_name, qr_code, position, last_login_ip, last_login_date, reg_date, type, ip_open, last_change_password_date, remark, create_date, create_user_id, create_user_name, modify_date, modify_user_id, modify_user_name, delete_date, delete_user_id, delete_user_name, is_deleted
+    </sql>
+
+</mapper>
